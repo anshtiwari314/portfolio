@@ -10,15 +10,18 @@ headerBtn.addEventListener('click',()=>{
         
         headerBtn.style.boxShadow=' inset 2px 2px 2px var(--light-color),inset -2px -2px 2px var(--dark-color)';
                    
-        for(let i=0;i<headerBtn.children.length;i++)
+        for(let i=0;i<headerBtn.children.length;i++){
             headerBtn.children[i].style.borderColor="black";
-        
+            headerBtn.children[i].style.backgroundColor="black";
+    }
         nav.style.display='none';
         
     }else{
         headerBtn.style.boxShadow=' inset 2px 2px 2px var(--dark-color),inset -2px -2px 2px var(--light-color)';
-        for(let i=0;i<headerBtn.children.length;i++)
+        for(let i=0;i<headerBtn.children.length;i++){
             headerBtn.children[i].style.borderColor="red";
+            headerBtn.children[i].style.backgroundColor="red";
+        }
         // headerBtn.hover(function myfunc2(){
         //         for(let i=0;i<headerBtn.children.length;i++)
         //         headerBtn.children[i].style.borderColor="red";
