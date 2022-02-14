@@ -420,6 +420,10 @@ header .cont .container .dropdown .box a:hover{
     
     
 }
+.sectionC a{
+    text-decoration: none;
+    color:black;
+}
 .sectionC h3{
     text-align: center;
     padding: 3.2rem 0;
@@ -487,7 +491,11 @@ header .cont .container .dropdown .box a:hover{
     top: 50%;
     transform: translate(-50%,-50% );
 }
-.sectionC .icons div:hover {
+.sectionC .icons div:hover{
+    color:red;
+    box-shadow: var(--small-inner-shadow);
+}
+.sectionC .icons div:hover a{
     color:red;
     box-shadow: var(--small-inner-shadow);
 }
@@ -535,6 +543,34 @@ header .cont .container .dropdown .box a:hover{
     background-color: var(--color-one);
     box-shadow:var(--small-outer-shadow);
     font-size: 1.5rem;
+    
+    
+}
+.sectionC .hire{
+    position: relative;
+    border-radius: 2.5rem 0rem 2.5rem 2.5rem;
+}
+.sectionC .hire:hover::before{
+    content:attr(mail);
+    display:block;
+    width:20rem;
+    height: 3rem;
+    position:absolute;
+    top:-4rem;
+    left:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:var(--small-outer-shadow);
+    cursor:hand;
+    border-radius: 2.5rem 2.5rem 2.5rem 0;
+
+}
+
+.sectionC a{
+    text-decoration: none;
+    color:black;
+    cursor:pointer
 }
 /* @media screen all and (max-width:){
     .sectionC     
@@ -618,7 +654,7 @@ header .cont .container .dropdown .box a:hover{
     border-radius: 1rem;
     display:inline-block;
     box-shadow: var(--small-outer-shadow);
-    background-color:rgb(14, 170, 8);
+    background-color:rgb(71, 171, 230);
     height: 1rem;
     border:.5rem solid transparent;
 }
@@ -758,6 +794,10 @@ header .cont .container .dropdown .box a:hover{
 .sectionE{
     margin-bottom: 3rem;
 }
+.sectionE a{
+    text-decoration: none;
+    color:black
+}
 .sectionE h3{
     text-align: center;
     padding: 3.2rem 0;
@@ -797,17 +837,18 @@ header .cont .container .dropdown .box a:hover{
     text-transform: capitalize;
     font-weight: 600;
     padding: .5rem 1.5rem ;
-    
-    width:40%;
+    color:blue;
+    width:35rem;
 }
-.sectionE .container .cards .card h5{
+
+.sectionE .container .cards .card p{
     text-transform: capitalize;
     padding-left: 1.5rem;
-    color:indianred;
+    
     font-size: 1.6rem;
     cursor:pointer;
- 
-    width:40%;
+    
+    width:35rem;
 }
 
 /*contact me sectionF*/
@@ -883,7 +924,7 @@ header .cont .container .dropdown .box a:hover{
 }  
 .sectionF .containerA .info .card p{
     color:gray;
-    
+    font-size: 1.6rem;
 }
 .sectionF .containerB .MsgBox{
     /* border: 1rem solid red; */

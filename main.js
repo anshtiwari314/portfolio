@@ -4,6 +4,23 @@ let headerBtn=document.querySelector('header .container button');
 let nav=document.querySelector('header .container .box');
 //console.log(headerBtn);
 
+let hire = document.getElementsByClassName('hire')
+
+hire[0].addEventListener('click',()=>{
+    
+    navigator.clipboard.writeText(hire[0].attributes[1].value).then(()=>{
+        alert("Email copied ")
+    },(e)=>{
+        console.log(e)
+    })
+
+    
+})
+
+
+
+
+
 headerBtn.addEventListener('click',()=>{
     // console.log();
     if(nav.style.display == 'block'){
