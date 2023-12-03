@@ -14,6 +14,7 @@ font-family: 'Acme', sans-serif;
 html{
     scroll-behavior: smooth;
     font-size: 62.5%;
+    /* font-size: 10px */
     
 }
 :root{
