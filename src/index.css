@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface font-body text-zinc-300 antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-surface;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-zinc-700 hover:bg-zinc-600;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply font-display text-3xl font-bold tracking-tight text-white sm:text-4xl;
+  }
+
+  .section-sub {
+    @apply mt-3 max-w-2xl text-base text-zinc-400 sm:text-lg;
+  }
+
+  .glass-card {
+    @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-accent to-accent-soft px-6 py-3 text-sm font-semibold text-surface shadow-glow transition hover:scale-[1.02] hover:shadow-lg active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:border-accent/50 hover:bg-white/10;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent via-accent-soft to-accent-purple bg-clip-text text-transparent;
+  }
+}
