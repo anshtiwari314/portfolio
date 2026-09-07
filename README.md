@@ -21,7 +21,7 @@ npm run preview  # preview production build
 - **React 19** + Vite 6
 - **Tailwind CSS** — dark theme, glassmorphism, gradients
 - **Framer Motion** — scroll animations & transitions
-- **Firebase Firestore** — contact form submissions
+- **Vitt Mailer API** — contact form emails via `vitt-mailer-livid.vercel.app`
 - **React Icons** — social & UI icons
 
 ## Deploy
@@ -39,7 +39,7 @@ src/
   components/   # UI sections (Hero, About, Skills, Projects, Contact)
   data/         # Portfolio content (portfolioData.js)
   hooks/        # useInView animation hook
-  firebase.js   # Firebase config
+  api/          # Contact form API (vitt-mailer)
 public/         # Images, resume PDF, static assets
 legacy/         # Original HTML portfolio
 ```

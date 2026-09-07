@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { HiMail, HiMap, HiPhone } from 'react-icons/hi';
+import { submitPortfolioForm } from '../api/contact';
 import { contactInfo, profile } from '../data/portfolioData';
-import { db } from '../firebase';
 import SectionWrapper, { FadeIn } from './SectionWrapper';
 
 const iconMap = {
@@ -36,13 +35,7 @@ export default function Contact() {
 
     setLoading(true);
     try {
-      await addDoc(collection(db, 'portfolio-contact'), {
-        name,
-        email,
-        subject,
-        msg: message,
-        timeStamp: serverTimestamp(),
-      });
+      await submitPortfolioForm({ name, email, subject, message });
       setStatus({ type: 'success', text: 'Your message has been sent successfully!' });
       setForm({ name: '', email: '', subject: '', message: '' });
     } catch (err) {
