@@ -2,6 +2,7 @@ import { FaDribbble, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 import { HiDownload } from 'react-icons/hi';
 import { profile } from '../data/portfolioData';
 import SectionWrapper, { FadeIn } from './SectionWrapper';
+import { useState } from 'react';
 
 const iconMap = {
   github: FaGithub,
@@ -11,9 +12,18 @@ const iconMap = {
 };
 
 export default function About() {
+  
+  const [copyEmailState,setCopyEmailState] = useState(false)
+
   const copyEmail = () => {
     navigator.clipboard.writeText(profile.email);
+    setCopyEmailState(true)
+
+    setTimeout(()=>{
+      setCopyEmailState(false)
+    },2000)
   };
+
 
   return (
     <SectionWrapper id="about">
@@ -73,7 +83,7 @@ export default function About() {
               Download Resume
             </a>
             <button type="button" onClick={copyEmail} className="btn-outline">
-              Hire Me — Copy Email
+              {copyEmailState ? "Copied":"Hire Me — Copy Email" }
             </button>
           </div>
         </FadeIn>

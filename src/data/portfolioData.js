@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Anuj Tiwari',
   shortName: 'Anuj',
-  title: 'Full Stack Developer & ML Engineer',
+  title: 'Full Stack Developer & AI Engineer',
   tagline:
     'Building scalable web & mobile apps with React, Node.js, WebRTC, and AI — 4+ years crafting products at Vitt AI.',
   email: 'anshtiwari314@gmail.com',
@@ -9,7 +9,7 @@ export const profile = {
   location: 'Ghaziabad, India',
   avatar: 'https://avatars.githubusercontent.com/u/68491888?v=4',
   aboutImage: '/anuj2.jpg',
-  resumeUrl: '/AnujTiwari-recent2.pdf',
+  resumeUrl: '/anuj-tiwari-cv.pdf',
   socials: [
     { label: 'GitHub', href: 'https://github.com/anshtiwari314', icon: 'github' },
     { label: 'LinkedIn', href: 'https://linkedin.com/in/anujtiwari3141', icon: 'linkedin' },
@@ -34,14 +34,29 @@ export const navLinks = [
 
 export const skillGroups = [
   {
-    title: 'Machine Learning',
+    title: 'Machine Learning & AI',
     color: 'from-violet-500 to-purple-600',
     skills: [
+      { name: 'Langchain', level: 60 },
       { name: 'Scikit-learn', level: 60 },
       { name: 'Pandas', level: 50 },
       { name: 'Streamlit', level: 65 },
       { name: 'NumPy', level: 30 },
       { name: 'PyTorch / ONNX', level: 55 },
+    ],
+  },
+  {
+    title: 'Devops',
+    color: 'from-emerald-500 to-teal-600',
+    skills: [
+      { name: 'Docker', level: 95 },
+      { name: 'Kubernetes', level: 80 },
+      { name: 'ci / cd (github actions)', level: 75 },
+      { name: 'ci / cd (jenkins)', level: 70 },
+      { name: 'Terraform', level: 60 },
+      { name: 'Ansible', level: 55 },
+      // { name: 'Promethius', level: 30 },
+      // { name: 'PyTorch / ONNX', level: 55 },
     ],
   },
   {
@@ -51,9 +66,11 @@ export const skillGroups = [
       { name: 'React.js (TypeScript)', level: 90 },
       { name: 'React Native', level: 75 },
       { name: 'Next.js', level: 70 },
+      { name: 'Electron.js', level: 60 },
       { name: 'WebSockets / WebRTC', level: 90 },
       { name: 'JavaScript', level: 85 },
       { name: 'Tailwind CSS', level: 80 },
+      
     ],
   },
   {
@@ -61,6 +78,7 @@ export const skillGroups = [
     color: 'from-cyan-500 to-blue-600',
     skills: [
       { name: 'Node.js', level: 75 },
+      { name: 'Flask', level: 65 },
       { name: 'MongoDB', level: 80 },
       { name: 'MySQL', level: 85 },
       { name: 'Firebase', level: 70 },
@@ -73,8 +91,9 @@ export const skillGroups = [
     skills: [
       { name: 'Three.js', level: 45 },
       { name: 'Java', level: 75 },
-      { name: 'Docker / AWS', level: 55 },
-      { name: 'Electron.js', level: 60 },
+      { name: 'AWS', level: 60 },
+      { name: 'Azure', level: 65 },
+      
     ],
   },
 ];
@@ -127,24 +146,46 @@ export const experience = [
 
 export const projects = [
   {
+    id: 2193,
+    title: 'Real-Time AI Sales Assistant – MakeMyTrip',
+    description:
+      `Electron assistant combining RAG, Whisper STT, web scraping, and travel APIs so advisors can retrieve packages and build
+itineraries during live calls.`,
+    image: '/images/mmt-assist.gif',
+    link: 'https://bit.ly/mmt-overlay',
+    tags: ['Electron.js', 'React.js', 'Flask', 'RAG', 'SQLite', 'Stt', 'chrome extension'],
+    featured: false,
+  },
+  {
+    id: 2193,
+    title: 'Accessibility Automated App',
+    description:
+      `Sideloaded Android Accessibility Service that automates sales-agent app flows without ADB; used screenshots + OCR when
+Flutter hid the accessibility tree`,
+    image: '/images/automation-app.gif',
+    link: 'https://bit.ly/auto-app-demo',
+    tags: ['React Native', 'Native Android Bridge', 'OCR'],
+    featured: false,
+  },
+  {
     id: 1,
     title: 'Video Conferencing App',
     description:
       'Platform for relationship managers to interact with clients — screen sharing, chat, and AI-powered financial query answers.',
-    image: '/images/vitt-meeting.gif',
+    image: '/images/vitt-meeting-new.gif',
     link: 'https://vitt-meeting.netlify.app/',
     tags: ['React', 'WebRTC', 'WebSockets', 'Node.js'],
-    featured: true,
+    featured: false,
   },
   {
     id: 2,
     title: 'Vitt AI Website',
     description:
       'Fully responsive company website built from Figma designs — showcases products and case studies.',
-    image: '/images/vitt.ai.gif',
+    image: '/images/vitt.ai-new.gif',
     link: 'https://vitt.ai/',
     tags: ['React', 'Responsive', 'Tailwind'],
-    featured: true,
+    featured: false,
   },
   {
     id: 3,
@@ -154,7 +195,7 @@ export const projects = [
     image: '/images/jarvis-manual-vad.gif',
     link: 'https://jarvis-in-person-cues7.netlify.app/',
     tags: ['ONNX', 'React', 'Audio ML'],
-    featured: true,
+    featured: false,
   },
   {
     id: 4,
