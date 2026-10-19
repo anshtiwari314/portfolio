@@ -178,6 +178,16 @@ Flutter hid the accessibility tree`,
     featured: false,
   },
   {
+    id: 1,
+    title: 'Spring Todo App',
+    description:
+      'spring mvc todo app with mysql',
+    image: '/images/spring-todo-app.gif',
+    link: 'https://spring-todo-app.ansh314creativecorner.dpdns.org/',
+    tags: ['Java','Spring MVC'],
+    featured: false,
+  },
+  {
     id: 2,
     title: 'Vitt AI Website',
     description:
