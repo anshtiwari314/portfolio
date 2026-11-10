@@ -147,6 +147,16 @@ export const experience = [
 export const projects = [
   {
     id: 2193,
+    title: 'Text-To-Sql - QueryAI',
+    description:
+      `Stop writing complex queries by hand. QueryAI turns natural language into highly optimized SQL in milliseconds.`,
+    image: '/images/text-to-sql.gif',
+    link: 'https://text-to-sql.ansh314creativecorner.dpdns.org/',
+    tags: ['Next.js', 'Next-Auth', 'OAuth', 'Flask', 'Postgres', 'Langchain'],
+    featured:false,
+  },
+  {
+    id: 2193,
     title: 'Real-Time AI Sales Assistant – MakeMyTrip',
     description:
       `Electron assistant combining RAG, Whisper STT, web scraping, and travel APIs so advisors can retrieve packages and build
